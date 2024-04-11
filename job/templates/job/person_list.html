@@ -1,0 +1,5 @@
+<h1>Person List</h1>
+{% for person in object_list %}
+<a href="{% url 'lion:detail' person.id %}">{{person.name}} ==== {{person.subject}}</a>
+<img src="{{person.image.url}}" alt="" width="100px">
+{% endfor %}
